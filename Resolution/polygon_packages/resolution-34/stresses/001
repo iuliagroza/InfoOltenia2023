@@ -1,0 +1,1 @@
+{"id":"b9ea994799e3d029a9103d2f033a735c","index":1,"scriptPattern":"gen_2x_sqrt_prime -n 100000 -m 100000","inputFile":"stdin","outputFile":"stdout","memoryLimit":256,"timeLimit":2000,"totalTimeLimit":15000,"solutionNames":["iulia_tle_cautare.cpp"],"description":"","solutionNamesUid":""}

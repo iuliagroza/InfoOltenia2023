@@ -1,0 +1,1 @@
+{"id":"11eb7a3d8e05a1f20cc94bf7537c3a8b","index":2,"scriptPattern":"gen_random -n 100 -m 100","inputFile":"stdin","outputFile":"stdout","memoryLimit":256,"timeLimit":2000,"totalTimeLimit":15000,"solutionNames":["iulia_brut.cpp"],"description":"","solutionNamesUid":""}

@@ -1,0 +1,62 @@
+\documentclass[ro]{problem}
+\usepackage{tikz}
+\title{Resolution - descriere soluţie}
+
+\input{header.tex}
+
+\begin{document}
+
+\maketitle
+
+Autor: Iulia Groza
+
+Problema se traduce ca:
+
+\setlength\parindent{24pt} Având un șir de $N$ numere: $A_1, A_2, ..., A_N$, se cere să se răspundă la $M$ interogări independente $(p, q)$, de forma "Care este suma primelor $q$ elemente ale șirului, după un număr nelimitat de interschimbări între elemente divizibile cu $p$?".
+
+\section{Subtask 1}
+\noindent Din moment ce toate elementele din șir sunt interschimbabile, problema se rezumă la a sorta descrescător șirul pentru a putea alege cele mai mari valori. Pentru determinarea sumelor în cazul fiecărei interogări în timp optim, se utilizează sume prefix. Se construiește în $O(N)$ structura auxiliară $sum[]$, unde:
+
+$sum[i] = \sum_{k=1}^{i} A_k$, $i=\overline{1,N}$
+
+\noindent Răspunsul în $O(1)$ pentru o interogare $(p, q)$ este $sum[q]$. Complexitatea de timp totală este $O(max(N, M))$.
+
+\section{Subtask 2}
+\noindent Construim mulțimea $D = \{A_i | A_i$ este par $, i=\overline{1,N}\}$ și calculăm sume prefix pentru D, utilizând structura $presum[]$:
+
+$presum[i] = \sum_{k=1}^{i} D_k$, $i=\overline{1,N}$
+
+\noindent Pentru a putea determina suma celor mai mari $X$ elemente pare din șir, vom sorta crescător $D$ și vom calcula sumele sufix corespunzătoare acesteia, notate cu $sufsum[]$.
+
+\noindent Notăm cu $X$ numărul elementelor pare din primele $q$ elemente din $A$, pentru fiecare interograre. Pentru a determina numărul $X$, reținem indicii elementelor pare, în ordinea în care se află în $A$, într-o structură auxiliară $ind[]$. Pentru fiecare interogare $(p, q)$, se caută binar $q$ în $ind[]$, astfel determinând numărul de elemente care trebuie interschimbate în $A_1, A_2, ..., A_q$: $X$.
+
+\noindent În final, răspunsul pentru fiecare interogare este $S = sum[q] - presum[X] + sufsum[X]$, unde $sum[]$ este structura de sume prefix menționată în subtask-ul anterior. Complexitatea  de timp totală este $O(N + MlogN)$.
+
+\section{Subtask 3}
+%Fac eu aici(Răzvan)
+\noindent \emph{(Autor: Răzvan Bogdan)}
+
+\noindent Pentru fiecare interogare $(p, q)$, se parcurge vectorul de elemente și se rețin:
+
+\begin{itemize}
+    \item $S\_all$ - Suma primelor $q$ elemente;
+    \item $S\_p$ - Suma elementelor divizibile cu $p$ din intervalul $[1...q]$ și numărul acestora $nr_p$;
+    \item $B[]$ - Un vector cu toate elementele divizibile cu $p$.
+\end{itemize}
+\noindent Intuitiv, pentru a maximiza suma primelor $q$ elemente, vom înlocui toate elementele divizibile cu $p$ din intervalul $[1...q]$ cu cele mai mari $nr_p$ din vectorul $B$. Așadar, rămâne doar să se sorteze descrescător vectorul $B$.
+
+\noindent În final, răspunsul este: $S\_all + \sum_{i=1}^{nr_p} B_i - S\_p$.
+
+\noindent Complexitatea de timp pe interogare este $O(N + |B| * log|B|)$.
+
+\noindent Scorul maxim asociat acestui subtask poate fi obținut atât prin efectuarea unei căutări liniare, cât și prin procesarea sumelor la nivel de interogare (fără precalculare) sau descompunerea în factori primi ineficientă.
+
+
+\section{Subtask 4}
+\noindent Față de cel de-al doilea subtask, nu există restricții în ceea ce privește valoarea lui $p$. Astfel, soluția de la subtask-ul $2$ se aplică pentru toți factorii primi din care sunt compuse elementele din $A$. Lista de factori primi se determină în timp optim folosind Ciurul lui Eratostene.
+
+\emph{Observație:} Limita valorilor elementelor din $A$ este $Q = 10^6$, așadar fiecare element din $A$ poate avea maxim $logQ < 20$ factori primi.
+
+\noindent Se precalculează structurile menționate în subtask-ul $2$ pentru fiecare element din lista de factori primi, astfel, transformând structurile de sume parțiale în structuri bidimensionale. Precalcularea este realizată în $O(NlogQ + QloglogQ)$. Complexitatea de timp a procesării interogărilor este $O(MlogN)$. 
+
+\end{document}

@@ -1,0 +1,79 @@
+\documentclass[ro]{problem}
+\usepackage{tikz}
+\title{Resolution}
+
+\input{header-26.tex}
+
+\begin{document}
+
+\maketitle
+
+La începutul anului 2023, Gosu și-a creat o listă de rezoluții. Printre cele mai importante lucruri pe care Gosu îsi dorește să le realizeze anul acesta se numără cititul a N cărți pe care le are pe raftul bibliotecii. Fiecare carte are asociată un scor acordat de un critic, număr întreg strict pozitiv. Lista scorurilor este reprezentată prin $A_1, A_2, ..., A_N$, unde $A_i$ reprezintă scorul celei de-a $i$-a carte de pe raft.
+
+\par
+
+Lista de rezoluții a lui Gosu conține reguli stricte pe care își dorește să le respecte. Printre ele se numără restricția de a lectura cărțile o singură dată, exact în ordinea în care se află pe raft. Deși este extrem de motivat să își îndeplinească toate rezoluțiile, este conștient că nu îi va fi ușor. Așadar, își propune să maximizeze beneficiile lecturii prin prioritizarea cărților din genurile literare preferate de acesta. Un gen literar este reprezentat printr-un număr prim $p$. O carte apartine unui gen literar $p$ dacă scorul asociat acesteia este divizibil cu $p$. De asemenea, o carte poate aparține mai multor genuri.
+
+\par
+
+Pentru a apuca să lectureze cât mai multe cărți din genurile sale preferate, în cazul în care va renunța ulterior la această rezoluție, Gosu este dispus să interschimbe de oricâte ori câte două cărți pe raft pentru a citi mai intâi cărțile cu scorul cel mai mare dintr-un gen literar. Două cărți pot fi interschimbate doar dacă au cel puțin un gen literar în comun.
+
+ \section{Cerinţă}
+
+ Fiind o persoană analitică și realistă, Gosu își imaginează $M$ scenarii de forma "După primele $q$ cărți citite, care va fi suma maximă a scorurilor acestora, după un număr nelimitat de interschimbări între cărți din genul literar $p$?". Acestea sunt situații ipotetice, deci ordinea cărților pe raft nu este modificată în realitate pe parcursul interogărilor. Aflați răspunsurile în cazul acestor situații, reprezentate prin interogări independente de forma $(p, q)$.
+ 
+\section{Date intrare}
+
+Prima linie a fișierului de intrare conține un singur număr întreg $N$, reprezentând numărul cărților.
+
+Pe următoarea linie se găsesc $N$ numere întregi, separate prin spații, reprezentând lista de scoruri asociate cărților.
+
+A treia linie de input conține un singur număr intreg $M$, reprezentând numărul de interogări.
+
+Următoarele $M$ linii conțin câte o interogare, reprezentată printr-o pereche de numere întregi separate printr-un spațiu, $(p, q)$, unde $p$ este un număr prim care denotă categoria cărților ce pot fi interschimbate, iar $q$ reprezintă numărul de cărți pe care Gosu plănuiește să le citească.
+
+\section{Date ieşire}
+
+În fișierul de ieșire se vor afișa, pe linii diferite, răspunsurile interogărilor. 
+
+\begin{restrictions}
+[
+    \item $1\leq N, M \leq 10^5$
+    \item $1  \leq  A_i \leq 10^6 $, $ 1 \leq i \leq N$
+    \item $1  \leq  p \leq 10^6 $, $ p $ este număr prim
+    \item $1  \leq  q \leq N $
+]
+\restr{20}{Pentru toate interogările, $ p = \np{2} $ și $ A_i $ este par, $ 1 \leq i \leq N $}
+\restr{20}{Pentru toate interogările, $ p = \np{2} $ }
+\restr{20}{$1 \leq N, M \leq 10^3$}
+\restr{40}{fără\ alte\ restricţii}
+
+\end{restrictions}
+
+\begin{examples}
+\exmp{10
+5 3 33 2 9 8 10 11 10 7
+4
+5 4
+11 5
+2 6
+7 5
+}{48
+52
+70
+52}%
+\end{examples}
+
+\section{Explicație}
+
+Lista de scoruri asociate cărților este $[5, 3, 33, 2, 9, 8, 10, 11, 10, 7]$ și avem $4$ interogări.
+
+Pentru prima interogare, interschimbând prima carte cu cea de-a noua, obținem scorul maximal al primelor $4$ cărți de $48$. După interschimbare, lista de cărți ar deveni $[10, 3, 33, 2, 9, 8, 10, 11, 5, 7]$.
+
+Pentru a doua interogare, nicio interschimbare nu este necesară; scorul total obținut este $52$.
+
+Pentru a treia interogare, două interschimbări sunt necesare; spre exemplu, prin interschimbarea celei de a patra cărți cu a șaptea, respectiv a celei de a șasea cărți cu a noua, se obține scorul maximal al primelor $6$ cărți de $70$. Configurația listei de cărți rearanjată este $[5, 3, 33, 10, 9, 10, 2, 11, 8, 7]$.
+
+În ultima interogare, nicio interschimbare nu este posibilă, din moment ce niciuna din primele $5$ cărți nu are asociat un scor divizibil cu $7$. Suma scorurilor este $52$.
+
+\end{document}

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="34" short-name="resolution" url="https://polygon.codeforces.com/p70hOH5/igroza/resolution">
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1500</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>58</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="gen_p2 -n 100 -m 100 dqw1ewcrt45trg456" group="p2-20p" method="generated" points="5.0"/>
+                <test cmd="gen_p2 -n 10000 -m 1000 f0sgdr2thtyj4353" group="p2-20p" method="generated" points="5.0"/>
+                <test cmd="gen_p2 -n 10000 -m 10000 43trt6erty899okiuy" group="p2-20p" method="generated" points="5.0"/>
+                <test cmd="gen_p2 -n 100000 -m 100000 54678gft5y7uigfd" group="p2-20p" method="generated" points="5.0"/>
+                <test cmd="gen_p2_even_elements -n 100 -m 100 adsfg56ye345yt" group="p2-even-elements-20p" method="generated" points="5.0"/>
+                <test cmd="gen_p2_even_elements -n 10000 -m 1000 23efvdghyu5453" group="p2-even-elements-20p" method="generated" points="5.0"/>
+                <test cmd="gen_p2_even_elements -n 10000 -m 10000 lokm567898edwfr" group="p2-even-elements-20p" method="generated" points="5.0"/>
+                <test cmd="gen_p2_even_elements -n 100000 -m 100000 fjeg043fhqhdefgr" group="p2-even-elements-20p" method="generated" points="5.0"/>
+                <test cmd="gen_simplu -n 1000 -m 1000 -max 100000 ewrewrwfsdfwwewewfdf" group="n-m-mici" method="generated" points="2.0"/>
+                <test cmd="gen_simplu -n 1000 -m 1000 -max 1000000 43rewfdfgfdgdsgsdfas" group="n-m-mici" method="generated" points="2.0"/>
+                <test cmd="gen_weighted -n 1000 -m 1000 -max 100000 ghfjfghdfgfdgfdgdfgdf" group="n-m-mici" method="generated" points="2.0"/>
+                <test cmd="gen_weighted -n 1000 -m 1000 -max 1000000 fgwerrtgfdgfdgfdgbfdgfdg" group="n-m-mici" method="generated" points="2.0"/>
+                <test cmd="gen_2x_sqrt_prime -n 1000 -m 1000 nfght443terfgfdgdfgfd" group="n-m-mici" method="generated" points="2.0"/>
+                <test cmd="gen_2x_sqrt_prime -n 1000 -m 1000 4543t34gfgfdgdfgdfgfgf" group="n-m-mici" method="generated" points="2.0"/>
+                <test cmd="gen_prime_mici -n 1000 -m 1000 dgfdffdsffdfhkșșțșțșțșțșțșf" group="n-m-mici" method="generated" points="2.0"/>
+                <test cmd="gen_prime_mici -n 1000 -m 1000 dasfdgrgfbfgbgfbfgșțățățăț" group="n-m-mici" method="generated" points="2.0"/>
+                <test cmd="gen_prime_mari -n 1000 -m 1000 cvbvvbcxvcxbvcbcvbcvbcvbcv" group="n-m-mici" method="generated" points="2.0"/>
+                <test cmd="gen_prime_mari -n 1000 -m 1000 *#$#@@@!#!@!!!!!!!!!!„„„„„" group="n-m-mici" method="generated" points="2.0"/>
+                <test cmd="gen_prime_mari -n 100000 -m 100000 *&amp;^&amp;$%#%$#@%%$&amp;*^&amp;*$%##@%" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_simplu -n 25 -m 25 -max 100000 s00ada657fg4hyju" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_simplu -n 100 -m 100 -max 1000000 fegr566543uy" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_simplu -n 1000 -m 1000 -max 1000000 32edrfg7j689o" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_simplu -n 10000 -m 100000 -max 1000000 nmd8t79y0jpdsf" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_simplu -n 100000 -m 100000 -max 1000000 2e93ifohr4utb5y6" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_simplu -n 100000 -m 100000 -max 1000000 ewretbyu6873" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_weighted -n 25 -m 25 -max 100000 f3revrgtyuyu" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_weighted -n 100 -m 100 -max 1000000 scwert50y" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_weighted -n 1000 -m 1000 -max 1000000 xdcnklwefriog4t8" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_weighted -n 10000 -m 100000 -max 1000000 23rgo4ihtj" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_weighted -n 100000 -m 100000 -max 1000000 ur34tjp5yn" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_weighted -n 100000 -m 100000 -max 1000000 cewrvtbynuyu89" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_2x_sqrt_prime -n 100000 -m 100000 fgfdg124124rgfvdfv" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_2x_sqrt_prime -n 100000 -m 100000 vbvasdwewqregbgnnnss" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_2x_sqrt_prime -n 100000 -m 100000 hgfhfgtrqetgghgfhsfwerfe" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_2x_sqrt_prime -n 100000 -m 100000 amnmnmbmn32bnmdsadsad" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_2x_sqrt_prime -n 100000 -m 100000 dfgtyreytjkj,jh,jhmgdsg" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_2x_sqrt_prime -n 100000 -m 100000 rthrhbsfdfrwhjghkhgjhgj" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_2x_sqrt_prime -n 100000 -m 100000 mhjrtyrwtwrghthktutyjnvbn" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mici -n 100000 -m 100000 dw2e21312321321312321fffff" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mici -n 100000 -m 100000 39rfdd9gfds9f9f9d9fdsfsdg" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mici -n 100000 -m 100000 3493294329`;`;`;`3232rred" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mici -n 100000 -m 100000 3534t9fgfdgfdkfkdakskdskk" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mici -n 100000 -m 100000 hgh9fbgfhlfdgdlgdflglfdgl" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mici -n 100000 -m 100000 05430tgfgfkdfaskdkasdkas" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mici -n 100000 -m 100000 kbkfaskdskdkasdkaskdaskd" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mari -n 100000 -m 100000 fdsfkdfmfmfmvcvcvbvnbnbnvb" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mari -n 100000 -m 100000 5453tg34g5y6ju8l8loilklfg" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mari -n 100000 -m 100000 `e`2retggn;;;;;;;h,dsadg" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mari -n 100000 -m 100000 7`3`3`253lkljjmmnfgf;;" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_prime_mari -n 100000 -m 100000 $#@$#$%#$^%@$!$!@#!@#@!#@" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_p2_even_elements -n 100000 -m 100000 ffdmvsdkf@#@$!@43243434" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_q_mare -n 100000 -m 100000 fd;vf,vldbm432$#@$#@$R#@$#3423" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_q_mare -n 100000 -m 100000 r30ofkfdkod$#$#4rfhgjHJHJHJHJ" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_q_mare -n 100000 -m 100000 l,vlcvcvASDASDASDsdbnbmbNDDSHT" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_q_mic -n 100000 -m 100000 gfdlgfdgplfdkgddf;sd;asd;as;d" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_q_mic -n 100000 -m 100000 plfppqpqlqwpelpwqdp;;dhjohhhh" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_q_mic -n 100000 -m 100000 d;vlvdlvdsdsdf13123123@!#!@##" group="fara-restrictii-40p" method="generated" points="1.0"/>
+                <test cmd="gen_q_mic -n 100000 -m 100000 lKKGHHGFHFGJGHJHdsfLJJLKLLLLLL" group="fara-restrictii-40p" method="generated" points="1.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="fara-restrictii-40p" points="40.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="n-m-mici"/>
+                        <dependency group="p2-20p"/>
+                        <dependency group="p2-even-elements-20p"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="n-m-mici" points="20.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="p2-20p" points="20.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="p2-even-elements-20p"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="p2-even-elements-20p" points="20.0" points-policy="complete-group"/>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen_2x_sqrt_prime.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_2x_sqrt_prime.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_p2.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_p2.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_p2_even_elements.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_p2_even_elements.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_prime_mari.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_prime_mari.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_prime_mici.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_prime_mici.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_q_mare.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_q_mare.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_q_mic.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_q_mic.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_simplu.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_simplu.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_weighted.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_weighted.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::ncmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="rejected">
+                <source path="solutions/denis_wa.cpp" type="cpp.g++11"/>
+                <binary path="solutions/denis_wa.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/iulia_100p.cpp" type="cpp.g++11"/>
+                <binary path="solutions/iulia_100p.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/iulia_brut.cpp" type="cpp.g++11"/>
+                <binary path="solutions/iulia_brut.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/iulia_p2_20p.cpp" type="cpp.g++11"/>
+                <binary path="solutions/iulia_p2_20p.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/iulia_p2_even_elements_20p.cpp" type="cpp.g++11"/>
+                <binary path="solutions/iulia_p2_even_elements_20p.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/iulia_tle_cautare.cpp" type="cpp.g++11"/>
+                <binary path="solutions/iulia_tle_cautare.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/iulia_tle_precalculare.cpp" type="cpp.g++11"/>
+                <binary path="solutions/iulia_tle_precalculare.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/razvan_100p.cpp" type="cpp.g++11"/>
+                <binary path="solutions/razvan_100p.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/razvan_20p_n_m_mici.cpp" type="cpp.g++11"/>
+                <binary path="solutions/razvan_20p_n_m_mici.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/razvan_20p_p2.cpp" type="cpp.g++11"/>
+                <binary path="solutions/razvan_20p_p2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/razvan_20p_p2_even.cpp" type="cpp.g++11"/>
+                <binary path="solutions/razvan_20p_p2_even.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/razvan_descomp_inef.cpp" type="cpp.g++11"/>
+                <binary path="solutions/razvan_descomp_inef.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/razvan_hybrid_bulanesku.cpp" type="cpp.g++11"/>
+                <binary path="solutions/razvan_hybrid_bulanesku.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>1</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list>
+            <stress index="1" path="stresses/001"/>
+        </list>
+    </stresses>
+</problem>
