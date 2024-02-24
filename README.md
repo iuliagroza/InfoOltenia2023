@@ -7,7 +7,7 @@ This repo contains statements, solutions and descriptions for two problems autho
 ## &#127919; Resolution
 ### PbInfo Link: [https://www.pbinfo.ro/probleme/4365/resolution](https://www.pbinfo.ro/probleme/4365/resolution)
 Level: **9<sup>th</sup>** Grade, **Individual** Round <br>
-Tags: `Binary Search` `Prefix/Suffix Sums` `Sieve of Erathostenes` 
+Tags: `Binary Search` `Prefix/Suffix Sums` `Sieve of Erathostenes`
 
 ## &#128293; Foc
 ### PbInfo Link: [https://www.pbinfo.ro/probleme/4371/foc](https://www.pbinfo.ro/probleme/4371/foc)
